@@ -20,7 +20,7 @@ func GetFileModTime(path string) int64 {
 	return fi.ModTime().Unix()
 }
 func send2dingtalk(){
-	webhook := "https://oapi.dingtalk.com/robot/send?access_token=598f161d26735e2a38c314815de809b708534ab31d1c2ff7c7abbe84a8e0243c"
+	webhook := "https://oapi.dingtalk.com/robot/send?access_token=598f161d26735e2a09bff7c7abbe84a8e0243c"
 	robot := dingrobot.NewRobot(webhook)
 	content := "xxx服务已停止写日志"
 	atMobiles := []string{"17600147211"}
